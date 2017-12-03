@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function a(data) {
+    console.log(data);
+  }
+  let oScript=document.createElement('script');
+  oScript.src="http://localhost:3000/jsonp?cb=a";
+  document.body.appendChild(oScript);
+</script>
+
+</body>
+</html>
